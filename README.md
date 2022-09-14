@@ -1,9 +1,7 @@
-# portal-app-backend
-
 ## 開発環境構築
 
 ```shell
-# docker-compose.yamlのあるディレクトリでDocker Imageのビルド
+# docker-compose.ymlのあるディレクトリでDocker Imageのビルド
 docker-compose build
 # コンテナ&サーバー起動
 docker-compose up
@@ -15,9 +13,14 @@ Docker内で以下のコマンドを叩く。
 ```shell
 # DBの最新化と初期データ投入
 alembic upgrade head
-PYTHONPATH=/src/ python load_data.py
+python load_data.py
 ```
 
+## DBの初期化
+```shell
+# スクリプトの起動
+python answer.py
+```
 ## 文法チェックとテスト
 
 ```shell
