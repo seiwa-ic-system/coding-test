@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:13.1-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_SERVER: db
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+
+  coding-test:
+    build:
+      ./src
+    volumes:
+      - ./src:/src
+    tty: true
+
+volumes:
+  postgres_data:
