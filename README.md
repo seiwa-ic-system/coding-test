@@ -16,9 +16,9 @@ alembic upgrade head
 python load_data.py
 ```
 
-## DBの初期化
+## スクリプトの起動
+Docker内で以下のコマンドを叩く。
 ```shell
-# スクリプトの起動
 python answer.py
 ```
 ## 文法チェックとテスト
