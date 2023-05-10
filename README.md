@@ -14,7 +14,7 @@ docker-compose up
 ```
 
 ## DBの初期化
-Docker内に接続する。
+まずDocker内に接続する。
 
 Docker desktopアプリからUI上で接続するか、docker execコマンドを用いる。
 
