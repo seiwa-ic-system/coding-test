@@ -6,7 +6,7 @@ from load_data import SessionLocal
 db = SessionLocal()
 
 
-def get_deta_example():
+def get_data_example():
     # ORM:sqlalchemy
     test_data: eav_model.EAV = (
         db.query(eav_model.EAV)
@@ -17,4 +17,4 @@ def get_deta_example():
 
 
 if __name__ == "__main__":
-    get_deta_example()
+    get_data_example()
